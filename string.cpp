@@ -6,6 +6,19 @@
 //  Copyright © 2020 Apple. All rights reserved.
 //
 #import <Foundation/Foundation.h>
+
+int strcat(int n){
+    int count =0;
+    for(int i=0;i<32;i++){
+        if ((1<<i & n)){
+            count++;
+        }
+    }
+    
+    return count;
+}
+
+
 char * stringcopy(char *str1,char *str2){
     
      long int len = strlen(str1);
